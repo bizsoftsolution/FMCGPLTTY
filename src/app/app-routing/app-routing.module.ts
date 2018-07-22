@@ -4,6 +4,7 @@ import { RouterModule, Routes, ROUTES } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { AdminmasterpageComponent } from '../adminmasterpage/adminmasterpage.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { AppMaterialModule } from '../app-material/app-material.module';
 
 const AdminRoutes: Routes = [
   {path: 'Dashboard', component: DashboardComponent}
@@ -17,10 +18,12 @@ const AppRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(AppRoutes)
+    RouterModule.forRoot(AppRoutes),
+    AppMaterialModule
   ],
   exports: [
-    RouterModule
+    RouterModule,
+    AppMaterialModule
   ],
   declarations: [
     LoginComponent,

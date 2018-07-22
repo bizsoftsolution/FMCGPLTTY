@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppLibService } from './app-lib.service';
-import { AppMaterialModule } from './app-material/app-material.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { AppMaterialModule } from './app-material/app-material.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AppMaterialModule
   ],
   providers: [AppLibService],
   bootstrap: [AppComponent]
