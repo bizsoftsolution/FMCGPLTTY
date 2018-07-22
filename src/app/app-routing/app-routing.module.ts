@@ -22,6 +22,10 @@ const AppRoutes: Routes = [
   exports: [
     RouterModule
   ],
-  declarations: []
+  declarations: [
+    LoginComponent,
+    AdminmasterpageComponent,
+    DashboardComponent
+  ]
 })
 export class AppRoutingModule { }

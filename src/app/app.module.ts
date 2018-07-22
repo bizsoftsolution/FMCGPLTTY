@@ -1,24 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { LoginComponent } from './login/login.component';
-import { AdminmasterpageComponent } from './adminmasterpage/adminmasterpage.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppLibService } from './app-lib.service';
+import { AppMaterialModule } from './app-material/app-material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    AdminmasterpageComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    AppMaterialModule
   ],
-  providers: [],
+  providers: [AppLibService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
